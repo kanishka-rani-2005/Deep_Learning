@@ -6,16 +6,20 @@ import pickle;
 from sklearn.preprocessing import StandardScaler,LabelEncoder,OneHotEncoder;
 
 from tensorflow import keras
+import os
 
-model = tf.keras.models.load_model('model.h5')
+# Load the model
+model = tf.keras.models.load_model(os.path.join(os.getcwd(), 'model.h5'))
 
-with open ('label_encoder_gender.pkl','rb') as f:
+# Load encoders and scaler
+import pickle
+with open(os.path.join(os.getcwd(), 'label_encoder_gender.pkl'), 'rb') as f:
     le_gender = pickle.load(f)
 
-with open ('onehot_encoder_geo.pkl','rb') as f:
+with open(os.path.join(os.getcwd(), 'onehot_encoder_geo.pkl'), 'rb') as f:
     ohe_geo = pickle.load(f)
 
-with open('scaler.pkl','rb') as f:
+with open(os.path.join(os.getcwd(), 'scaler.pkl'), 'rb') as f:
     scaler = pickle.load(f)
 
 
