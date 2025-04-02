@@ -9,13 +9,13 @@ from tensorflow import keras
 
 model = tf.keras.models.load_model('model.h5')
 
-with open ('Deep_Learning\\Churn_Modeling\\label_encoder_gender.pkl','rb') as f:
+with open ('label_encoder_gender.pkl','rb') as f:
     le_gender = pickle.load(f)
 
-with open ('Deep_Learning\\Churn_Modeling\\onehot_encoder_geo.pkl','rb') as f:
+with open ('onehot_encoder_geo.pkl','rb') as f:
     ohe_geo = pickle.load(f)
 
-with open('Deep_Learning\\Churn_Modeling\\scaler.pkl','rb') as f:
+with open('scaler.pkl','rb') as f:
     scaler = pickle.load(f)
 
 
