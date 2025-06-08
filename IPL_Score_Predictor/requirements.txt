@@ -3,4 +3,7 @@ scikit-learn
 pandas
 numpy
 keras
-tensorflow
+tensorflow==2.19.0
+
+matplotlib
+seaborn
