@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pickle
 
-with open('label_encoder.pkl', 'rb') as f:
+with open('IPL_Score_Predictor//label_encoder.pkl', 'rb') as f:
     label_encoders = pickle.load(f)
 
 with open('scaler.pkl', 'rb') as f:
