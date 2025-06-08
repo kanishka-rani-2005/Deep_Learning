@@ -9,10 +9,10 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(BASE_DIR, 'label_encoder.pkl'), 'rb') as f:
     label_encoders = pickle.load(f)
 
-with open('scaler.pkl', 'rb') as f:
+with open(os.path.join(BASE_DIR, 'scaler.pkl') 'rb') as f:
     scaler = pickle.load(f)
 
-with open('ipl_score_model.pkl', 'rb') as f:
+with open(os.path.join(BASE_DIR, 'ipl_score_model.pkl') 'rb') as f:
     model = pickle.load(f)
 
 st.title("🏏 IPL Score Predictor")
