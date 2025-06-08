@@ -1,10 +1,12 @@
 import streamlit as st
 import numpy as np
 import pickle
+import os
 
-with open('label_encoder.pkl', 'rb') as f:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(BASE_DIR, 'label_encoder.pkl'), 'rb') as f:
     label_encoders = pickle.load(f)
-
 
 with open('scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
