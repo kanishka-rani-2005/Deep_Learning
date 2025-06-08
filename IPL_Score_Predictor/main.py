@@ -2,7 +2,8 @@ import streamlit as st
 import numpy as np
 import pickle
 
-with open('IPL_Score_Predictor//label_encoder.pkl', 'rb') as f:
+file_path = os.path.join("IPL_Score_Predictor", "label_encoder.pkl")
+with open(file_path, 'rb') as f:
     label_encoders = pickle.load(f)
 
 with open('scaler.pkl', 'rb') as f:
