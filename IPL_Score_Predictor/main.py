@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pickle
+import os
 
 file_path = os.path.join("IPL_Score_Predictor", "label_encoder.pkl")
 with open(file_path, 'rb') as f:
