@@ -1,0 +1,2 @@
+Link for dataset
+https://www.kaggle.com/datasets/mssmartypants/rice-type-classification
