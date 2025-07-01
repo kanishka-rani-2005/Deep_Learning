@@ -1,0 +1,2 @@
+Link for dataset
+https://www.kaggle.com/datasets/mohammedalrajeh/quran-recitations-for-audio-classification
